@@ -47,6 +47,42 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
+    $('.wp10').waypoint(function () {
+        $('.wp10').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp11').waypoint(function () {
+        $('.wp11').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wp12').waypoint(function () {
+        $('.wp12').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp13').waypoint(function () {
+        $('.wp13').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wp14').waypoint(function () {
+        $('.wp14').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp15').waypoint(function () {
+        $('.wp15').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wp16').waypoint(function () {
+        $('.wp16').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+
 
     /***************** Initiate Flexslider ******************/
     $('.flexslider').flexslider({
@@ -96,7 +132,7 @@ $(document).ready(function () {
                     "padding": "35px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "26px",
+                    "top": "34px",
                 });
                 $('header .navicon').css({
                     "top": "34px",
@@ -108,7 +144,7 @@ $(document).ready(function () {
                     "padding": "50px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "41px",
+                    "top": "50px",
                 });
                 $('header .navicon').css({
                     "top": "48px",
@@ -206,33 +242,27 @@ $(document).ready(function () {
 
     $('#add-to-cal').html(myCalendar);
 
-
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $.post('https://script.google.com/macros/s/AKfycbw08HkpFVzZg5-CwcLWcC92CFR3lhLQAhpuA-kFA5EzW7Y7hlw/exec', data)
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                    $('#alert-wrapper').html(alert_markup('danger', data.message));
+                } else {
+                    $('#alert-wrapper').html('');
+                    $('#rsvp-modal').modal('show');
+                }
+            })
+            .fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+            });
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
-        } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                    }
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
-                });
-        }
     });
 
 });
@@ -272,6 +302,9 @@ function initBBSRMap() {
 function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
 }
+
+var flipdown = new FlipDown(1634270400);
+flipdown.start();
 
 // MD5 Encoding
 var MD5 = function (string) {
