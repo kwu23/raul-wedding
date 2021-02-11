@@ -18,8 +18,8 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/RL.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/RL.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/flipdown.css">
+    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
@@ -43,15 +44,16 @@
         <section class="navigation">
             <header>
                 <div class="header-content">
-                    <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                    <div class="logo"><a href="#"><img src="img/RL.png" style="width:50px;height:auto;" alt="Logo"></a>
+                    </div>
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
-                                <li><a href="#intro">Our story</a></li>
-                                <li><a href="#events">Events</a></li>
-                                <li><a href="#instagram">Instagram</a></li>
-                                <li><a href="#eng-pics">Engagement</a></li>
-                                <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                                <li><a href="#intro">Wedding details</a></li>
+                                <li><a href="#story">Our story</a></li>
+                                <li><a href="#weddingparty">Wedding party</a></li>
+                                <li><a href="#engagementpics">Pictures</a></li>
+                                <li><a href="#city">Miami</a></li>
                             </ul>
                             <ul class="member-actions">
                                 <li><a href="#rsvp" class="btn-burgundy btn-small">RSVP</a></li>
@@ -72,7 +74,8 @@
                     </div>
                 </div>
             </div>
-            <div id="flipdown" style="width:fit-content;margin-left:auto;margin-right:auto;padding-bottom:100px;" class="flipdown"></div>
+            <div id="flipdown" style="width:fit-content;margin-left:auto;margin-right:auto;padding-bottom:100px;"
+                class="flipdown"></div>
         </div>
     </section>
 
@@ -89,7 +92,8 @@
                         Secret Gardens Miami <br />
                         14450 SW 248th St <br />
                         Homestead, FL 33032 <br />
-                        <a href="https://www.secretgardensmiami.com/">www.secretgardensmiami.com</a></p>
+                        <a href="https://www.secretgardensmiami.com/">www.secretgardensmiami.com</a>
+                    </p>
                     <p>About the Venue: Secret Gardens Miami is a breathtaking property located in the Redlands
                         agricultural area of Miami. Its natural ambiance and serene setting make it the perfect location
                         for weddings and events. The extensive tropical foliage complemented by flowing waterfalls and
@@ -98,179 +102,145 @@
                         ponds, waterfalls, and a stone arch. The reception will take place under a dazzling, spacious
                         tent complete with 21 fans, hard flooring, draping, and lights. Free valet parking will be
                         provided upon arrival.</p>
-                        <div class="col-md-6"><img src="img/image1.png" /></div>
-                        <div class="col-md-6"><img src="img/image4.png" /></div>
+                    <div class="col-md-6"><img src="img/image1.png" /></div>
+                    <div class="col-md-6"><img src="img/image4.png" /></div>
                 </div>
             </div>
             <br />
         </div>
-        <div style="background-color:#ffeefa;">
-        <div class="container">
-            <div class="row">
+        <div id="story" style="background-color:#ffeefa;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="header">Our Story</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 hidden-sm hidden-xs"><img src="img/raul.png" class="wp1"></div>
+                    <div class="col-md-6">
+                        <p>
+                            Raul and Leah met at the University of Florida in April 2016 and began dating in June 2016.
+                            After graduation, both began working at Amazon. Raul is a Material Flow & Optimization
+                            Engineer,
+                            designing and optimizing warehouse spaces for 10 buildings. Leah is an Operations Manager,
+                            leading front-line managers and associates to deliver customer shipments. Raul and Leah got
+                            engaged in September 2020 at Fairchild Botanical Gardens in Miami, FL. They moved to Miami,
+                            FL
+                            in February 2021 and are excited to build their lives together. Raul’s favorite things about
+                            Leah are x, y, z. Leah’s favorite things about Raul are his intellect, patience, and
+                            personable
+                            nature. In their spare time, you can find them playing with their dog and cat Mia and Ellie,
+                            traveling to new places, checking out new cuisines and restaurants, and spending time with
+                            family and friends.
+                        </p>
+                    </div>
+                    <div class="col-md-3 hidden-sm hidden-xs"><img src="img/leah.png" class="wp2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/raul.png"
+                            class="wp8"></div>
+                    <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/leah.png"
+                            class="wp9"></div>
+                </div>
+            </div>
+        </div>
+        <div id="weddingparty" class="container">
+            <div class="row" style="padding-bottom:30px;">
                 <div class="col-md-12 text-center">
-                    <h3 class="header">Our Story</h3>
+                    <h3 class="header">Wedding party</h3>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h5>Wendy Sullivan</h5>
+                            <img class="wp10" style="max-height:200px; width:auto;" src="img/Wendy_Sullivan.jpg" />
+                        </div>
+                        <div class="col-xs-6">
+                            <h5>Kevin Wu</h5>
+                            <img class="wp11" style="max-height:200px; width:auto;" src="img/Wendy_Sullivan.jpg" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h5>Jennifer Slane</h5>
+                            <img class="wp12" style="max-height:200px; width:auto;" src="img/Jennifer_Slane.jpg" />
+                        </div>
+                        <div class="col-xs-6">
+                            <h5>Yaser Alonso</h5>
+                            <img class="wp13" style="max-height:200px; width:auto;" src="img/Jennifer_Slane.jpg" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h5>Jessica Slane</h5>
+                            <img class="wp14" style="max-height:200px; width:auto;" src="img/Jessica_Slane.jpg" />
+                        </div>
+                        <div class="col-xs-6">
+                            <h5>Albert Alonso</h5>
+                            <img class="wp15" style="max-height:200px; width:auto;" src="img/Jessica_Slane.jpg" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h5>Miriam Alonso</h5>
+                            <img class="wp16" style="max-height:200px; width:auto;" src="img/Miriam_Alonso.jpg" />
+                        </div>
+                        <div class="col-xs-6">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/raul.png" class="wp1"></div>
-                <div class="col-md-6">
-                    <p>
-                        Raul and Leah met at the University of Florida in April 2016 and began dating in June 2016.
-                        After graduation, both began working at Amazon. Raul is a Material Flow & Optimization Engineer,
-                        designing and optimizing warehouse spaces for 10 buildings. Leah is an Operations Manager,
-                        leading front-line managers and associates to deliver customer shipments. Raul and Leah got
-                        engaged in September 2020 at Fairchild Botanical Gardens in Miami, FL. They moved to Miami, FL
-                        in February 2021 and are excited to build their lives together. Raul’s favorite things about
-                        Leah are x, y, z. Leah’s favorite things about Raul are his intellect, patience, and personable
-                        nature. In their spare time, you can find them playing with their dog and cat Mia and Ellie,
-                        traveling to new places, checking out new cuisines and restaurants, and spending time with
-                        family and friends.
-                    </p>
-                </div>
-                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/leah.png" class="wp2"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/raul.png"
-                        class="wp8"></div>
-                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/leah.png"
-                        class="wp9"></div>
-            </div>
         </div>
-        </div>
-        <div class="container"> 
-        <div class="row" style="padding-bottom:30px;">
+    </section>
+
+
+    <style>
+        .splide_slide_custom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <section id="engagementpics" class="section-padding">
+        <div class="container">
             <div class="col-md-12 text-center">
-                <h3 class="header">Wedding party</h3>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h5>Wendy Sullivan</h5>
-                        <img class="wp10" style="max-height:200px; width:auto;" src="img/Wendy_Sullivan.jpg" />
-                    </div>
-                    <div class="col-xs-6">
-                        <h5>Kevin Wu</h5>
-                        <img class="wp11" style="max-height:200px; width:auto;" src="img/Wendy_Sullivan.jpg" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h5>Jennifer Slane</h5>
-                        <img class="wp12" style="max-height:200px; width:auto;" src="img/Jennifer_Slane.jpg" />
-                    </div>
-                    <div class="col-xs-6">
-                        <h5>Yaser Alonso</h5>
-                        <img class="wp13"  style="max-height:200px; width:auto;" src="img/Jennifer_Slane.jpg" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h5>Jessica Slane</h5>
-                        <img class="wp14" style="max-height:200px; width:auto;" src="img/Jessica_Slane.jpg" />
-                    </div>
-                    <div class="col-xs-6">
-                        <h5>Albert Alonso</h5>
-                        <img class="wp15"  style="max-height:200px; width:auto;" src="img/Jessica_Slane.jpg" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h5>Miriam Alonso</h5>
-                        <img class="wp16" style="max-height:200px; width:auto;" src="img/Miriam_Alonso.jpg" />
-                    </div>
-                    <div class="col-xs-6">
+                <h3 class="header">Engagement pictures</h3>
+                <div id="image-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide splide_slide_custom">
+                                <img src="img/engagement_pic1.jpg">
+                            </li>
+                            <li class="splide__slide splide_slide_custom">
+                                <img src="img/engagement_pic2.jpg">
+                            </li>
+                            <li class="splide__slide splide_slide_custom">
+                                <img src="img/engagement_pic3.jpg">
+                            </li>
+                            <li class="splide__slide splide_slide_custom">
+                                <img src="img/engagement_pic4.jpg">
+                            </li>
+                            <li class="splide__slide splide_slide_custom">
+                                <img src="img/engagement_pic5.jpg">
+                            </li>
+                            <li class="splide__slide splide_slide_custom">
+                                <img src="img/engagement_pic6.jpg">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
-
-    <section id="eng-pics" class="section-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="header">Engagement Pics</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/_RFX2942-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/eng_pics/_RFX2942-sm.jpg" alt="" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/IMG_3483-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/eng_pics/IMG_3483-sm.jpg" alt="" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/_RFX2992-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/eng_pics/_RFX2992-sm.jpg" alt="" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/_RFX3064-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/eng_pics/_RFX3064-sm.jpg" alt="" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/NGP_4089-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/eng_pics/NGP_4089-sm.jpg" alt="" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/NGP_4119-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/eng_pics/NGP_4119-sm.jpg" alt="" />
-                        </div>
-                    </a>
-                </div>
-            </div>
+    <section id="video-bg" class="hidden-sm hidden-xs">
+        <div id="bgndVideo" class="player"
+            data-property="{videoURL:'https://www.youtube.com/watch?v=OfoH0_9pXck',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, stopAt:420, opacity:1}">
         </div>
-        <div class="container">
-            <div class="row hidden-lg hidden-md hidden-xs">
-                <div class="col-xs-12 section-border section-padding"></div>
-            </div>
+        <div id="video-content" style="padding-top:125px;">
+            <h5>MIAMI</h5>
         </div>
-        <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
     </section>
 
-    <section class="events section-padding" id="events">
+    <section class="events section-padding" id="city">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -281,13 +251,17 @@
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp3">
                         <h5>Holiday Inn Express & Suites Miami-Kendall</h5>
-                        <p>13475 SW 131st St </br> Miami, FL 33186 <br /> <a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/miami/miafl/hoteldetail">Link</a></p>
+                        <p>13475 SW 131st St </br> Miami, FL 33186 <br /> <a
+                                href="https://www.ihg.com/holidayinnexpress/hotels/us/en/miami/miafl/hoteldetail">Link</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp4">
                         <h5>Best Western Plus Miami Executive Airport Hotel & Suites</h5>
-                        <p>13700 SW 139th Ct </br> Miami, FL 33186 <br /> <a href="https://www.bestwestern.com/en_US/book/hotels-in-miami/best-western-plus-miami-executive-airport-hotel-suites/propertyCode.10398.html">Link</a></p>
+                        <p>13700 SW 139th Ct </br> Miami, FL 33186 <br /> <a
+                                href="https://www.bestwestern.com/en_US/book/hotels-in-miami/best-western-plus-miami-executive-airport-hotel-suites/propertyCode.10398.html">Link</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -301,32 +275,43 @@
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp1">
                         <h5>South Beach</h5>
-                        <p>Travelers go to Miami mainly for South Beach, the region's unrivaled crown jewel, which visitors say they can't get enough of. Here, the art deco history of the city meets the bright lights and vibrant nightlife of the younger generation.</p>
+                        <p>Travelers go to Miami mainly for South Beach, the region's unrivaled crown jewel, which
+                            visitors say they can't get enough of. Here, the art deco history of the city meets the
+                            bright lights and vibrant nightlife of the younger generation.</p>
                     </div>
                     <div class="wp3">
                         <h5>Vizcaya Museum and Gardens</h5>
-                        <p>Built in 1916 as a winter retreat, this lavish villa is a tribute to the Italian Renaissance. The museum contains much of the original furnishings and artwork, and is surrounded by lush, formal gardens.</p>
+                        <p>Built in 1916 as a winter retreat, this lavish villa is a tribute to the Italian Renaissance.
+                            The museum contains much of the original furnishings and artwork, and is surrounded by lush,
+                            formal gardens.</p>
                     </div>
                     <div class="wp5">
                         <h5>Bayside Marketplace</h5>
-                        <p>Situated between Bayfront Park, Miamarina and the PortMiami cruise ship terminal, the Bayside Marketplace is a hub for tourists who want to shop, dine and people-watch.
+                        <p>Situated between Bayfront Park, Miamarina and the PortMiami cruise ship terminal, the Bayside
+                            Marketplace is a hub for tourists who want to shop, dine and people-watch.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp2">
                         <h5>Wynwood Walls</h5>
-                        <p>This open-air street art installation – one of the largest in the world – is one of the reasons a formerly run-down neighborhood found new life as the art hub of Miami.
+                        <p>This open-air street art installation – one of the largest in the world – is one of the
+                            reasons a formerly run-down neighborhood found new life as the art hub of Miami.
                         </p>
                     </div>
                     <div class="wp4">
                         <h5>Fairchild Tropical Botanical Gardens</h5>
-                        <p>At 83 acres, the Fairchild Tropical Botanic Garden is one of the largest of its kind in the country. With a surplus of tropical plants and other beautiful greenery, you'll likely find the Fairchild to be one of the most relaxing attractions on your to-do list.
+                        <p>At 83 acres, the Fairchild Tropical Botanic Garden is one of the largest of its kind in the
+                            country. With a surplus of tropical plants and other beautiful greenery, you'll likely find
+                            the Fairchild to be one of the most relaxing attractions on your to-do list.
                         </p>
                     </div>
                     <div class="wp6">
                         <h5>Everglades National Park</h5>
-                        <p>Everglades National Park, just a short drive from Miami, protects one of Florida's most unique natural features. These swamplands, covering about 1.5 million acres, are home to alligators, crocodiles, snakes, and birds. This whole area is essentially a shallow river flowing out to the ocean.
+                        <p>Everglades National Park, just a short drive from Miami, protects one of Florida's most
+                            unique natural features. These swamplands, covering about 1.5 million acres, are home to
+                            alligators, crocodiles, snakes, and birds. This whole area is essentially a shallow river
+                            flowing out to the ocean.
                         </p>
                     </div>
                 </div>
@@ -340,31 +325,25 @@
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp1">
                         <h5>Finka Table and Tap</h5>
-                        <p>Gastropub with a homey, hacienda feel serving unique Cuban fare with Peruvian and Korean influences.</p>
+                        <p>Gastropub with a homey, hacienda feel serving unique Cuban fare with Peruvian and Korean
+                            influences.</p>
                     </div>
                     <div class="wp3">
                         <h5>Aromas del Peru</h5>
-                        <p>Specializes in Peruvian Food such as ceviches and seafood. The menu includes traditional Peruvian cuisine with current innovations while respecting the classic.</p>
+                        <p>Specializes in Peruvian Food such as ceviches and seafood. The menu includes traditional
+                            Peruvian cuisine with current innovations while respecting the classic.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp2">
                         <h5>Islas Canarias</h5>
-                        <p>Best for breakfast and lunch. Casually elegant atmosphere and deliciously authentic Cuban & Spanish cuisine using Cuban family recipes.
+                        <p>Best for breakfast and lunch. Casually elegant atmosphere and deliciously authentic Cuban &
+                            Spanish cuisine using Cuban family recipes.
                         </p>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <section id="video-bg" class="hidden-sm hidden-xs">
-        <div id="bgndVideo" class="player"
-            data-property="{videoURL:'https://www.youtube.com/watch?v=OfoH0_9pXck',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, stopAt:420, opacity:1}">
-        </div>
-        <div id="video-content" style="padding-top:125px;">
-            <h5>MIAMI</h5>
         </div>
     </section>
 
@@ -385,6 +364,20 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+
+        <style>
+            .registry-section {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        </style>
+
+        <div class="container registry-section">
+            <div class="col-md-6 col-md-offset-3">
+            <h3>Registry</h3>
+            If you must gift us, please go to <a href="www.zola.com/registry/leahandraul">the following link</a>.
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -442,6 +435,7 @@
     <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="js/vendor/ouical.js"></script>
     <script src="js/flipdown.js"></script>
+    <script src="js/splide.min.js"></script>
     <script src="js/scripts.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>

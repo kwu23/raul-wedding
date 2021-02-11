@@ -303,8 +303,13 @@ function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
 }
 
-var flipdown = new FlipDown(1634270400);
-flipdown.start();
+var flipdown = new FlipDown(1634270400, {
+    theme: "light",
+  }).start();
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#image-slider').mount();
+} );
 
 // MD5 Encoding
 var MD5 = function (string) {
