@@ -359,9 +359,9 @@ section .header {
   position: relative;
 }
 @media only screen and (max-width: 1200px) {
-    .hero {
-        background: url("../img/hero-min.jpg") center center;
-    }
+  .hero {
+    background: url("../img/hero-min.jpg") center center;
+  }
 }
 .hero .down-arrow a {
   color: #fff;
